@@ -1,0 +1,8 @@
+---
+
+- name: "Configure app server(s)"
+  hosts: "ubuka"
+  become: True
+
+  roles:
+    - { role: "nickjj.docker", tags: "docker" }
